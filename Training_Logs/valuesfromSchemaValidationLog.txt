@@ -1,0 +1,2 @@
+2022-04-12/23:07:08name 'schema_path' is not defined2022-04-12/23:07:52LengthOfDateStampInFile:: 8	 LengthOfTimeStampInFile:: 6	 NumberofColumns:: 52
+2022-04-12/23:10:51LengthOfDateStampInFile:: 8	 LengthOfTimeStampInFile:: 6	 NumberofColumns:: 52
