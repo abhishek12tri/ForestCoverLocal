@@ -4,7 +4,7 @@ import os
 from flask_cors import CORS, cross_origin
 import flask_monitoringdashboard as dashboard
 from training_Validation_Insertion import train_validation
-#import pandas as pd
+import pandas as pd
 
 app = Flask(__name__)
 dashboard.bind(app)

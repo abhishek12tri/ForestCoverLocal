@@ -1,0 +1,15 @@
+2022-04-17/18:05:39	Bad data raw deleted from folder
+2022-04-17/18:05:39	Good file deleted from folder
+2022-04-18/00:09:15	Good Bad Directory created successfully
+2022-04-18/01:04:25	Bad data raw deleted from folder
+2022-04-18/01:04:25	Good file deleted from folder
+2022-04-18/01:04:25	Good Bad Directory created successfully
+2022-04-18/01:05:59	Bad data raw deleted from folder
+2022-04-18/01:05:59	Good file deleted from folder
+2022-04-18/01:05:59	Good Bad Directory created successfully
+2022-04-18/01:06:20	Bad data raw deleted from folder
+2022-04-18/01:06:20	Good file deleted from folder
+2022-04-18/01:06:20	Good Bad Directory created successfully
+2022-04-18/01:52:51	Bad data raw deleted from folder
+2022-04-18/01:52:51	Good file deleted from folder
+2022-04-18/01:52:51	Good Bad Directory created successfully

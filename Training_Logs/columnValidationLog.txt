@@ -1,0 +1,3 @@
+2022-04-18/01:52:51	Column Length Validation Started!!
+2022-04-18/01:52:51	Invalid Column Length for the file!! File moved to Bad Raw Folder :: forest_cover_28011999_120259.csv
+2022-04-18/01:52:52	Column Length Validation Completed!!

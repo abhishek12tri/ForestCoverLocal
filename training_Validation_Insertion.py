@@ -15,12 +15,15 @@ class train_validation:
     def train_validation(self):
         try:
             self.log_writer.log(self.file_object, 'Start of Validation on files for training!!')
-            # extracting values from prediction schema
+            """extracting values from prediction schema"""
             LengthOfDateStampInFile, LengthOfTimeStampInFile, column_names, NumberOfColumns = self.raw_data.values_from_schema()
-            # getting the regex defined to validate filename
+            """getting the regex defined to validate filename"""
             regex_creation = self.raw_data.manual_regex_creation()
-            # validating filename of prediction files
+            """validating filenames and columns of prediction files"""
             self.raw_data.validationRawFileName(regex_creation, LengthOfDateStampInFile, LengthOfTimeStampInFile)
+            self.raw_data.validationRawColumns(NumberOfColumns)
+
+
             
             return LengthOfDateStampInFile
         except Exception as e:
