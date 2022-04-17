@@ -1,0 +1,27 @@
+{% block head %}
+<title>Home PAge</title>
+{% endblock %}
+
+{% block body %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<h1>Home Page</h1>
+<-- /home/abhishek/learn/iNeuron/projects/Forest Cover/ForestCoverLocal/data -->
+<div class="page-container">
+    <div class="page-content">
+        <div class="form-content">
+            <form method="post" action="/train" id="train-predict-file" enctype="multipart/form-data">
+                <div class="input-box">
+                    <input type="text" id="csv-folder-path" name="csv-folder-path" required>
+                </div>
+                <div class="btns-block">
+                    <input type="submit" name="btn-submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+</script>
+{% endblock %}
