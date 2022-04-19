@@ -1,3 +1,36 @@
 2022-04-18/01:52:51	Column Length Validation Started!!
 2022-04-18/01:52:51	Invalid Column Length for the file!! File moved to Bad Raw Folder :: forest_cover_28011999_120259.csv
 2022-04-18/01:52:52	Column Length Validation Completed!!
+2022-04-19/00:42:34	Column Length Validation START
+2022-04-19/00:42:34	Invalid Column Length for the file. Bad Raw Folder: forest_cover_28011999_120259.csv
+2022-04-19/00:42:34	Column Length Validation END
+2022-04-19/00:45:17	Column Length Validation START
+2022-04-19/00:45:17	Invalid Column Length for the file. Bad Raw Folder: forest_cover_28011999_120259.csv
+2022-04-19/00:45:18	Column Length Validation END
+2022-04-19/00:46:49	Column Length Validation START
+2022-04-19/00:46:49	Invalid Column Length for the file. Bad Raw Folder: forest_cover_28011999_120259.csv
+2022-04-19/00:46:50	Column Length Validation END
+2022-04-19/00:47:36	Column Length Validation START
+2022-04-19/00:47:36	Invalid Column Length for the file. Bad Raw Folder: forest_cover_28011999_120259.csv
+2022-04-19/00:47:36	Column Length Validation END
+2022-04-19/00:48:01	Column Length Validation START
+2022-04-19/00:48:01	Invalid Column Length for the file. Bad Raw Folder: forest_cover_28011999_120259.csv
+2022-04-19/00:48:01	Column Length Validation END
+2022-04-19/00:55:02	Column Length Validation START
+2022-04-19/00:55:02	Invalid Column Length for the file. Bad Raw Folder: forest_cover_28011999_120259.csv
+2022-04-19/00:55:02	Column Length Validation END
+2022-04-19/00:55:35	Column Length Validation START
+2022-04-19/00:55:35	Invalid Column Length for the file. Bad Raw Folder: forest_cover_28011999_120259.csv
+2022-04-19/00:55:35	Column Length Validation END
+2022-04-19/01:26:34	Column Length Validation START
+2022-04-19/01:26:34	Invalid Column Length for the file. Bad Raw Folder: forest_cover_28011999_120259.csv
+2022-04-19/01:26:34	Column Length Validation END
+2022-04-19/01:55:59	Column Length Validation START
+2022-04-19/01:55:59	Invalid Column Length for the file. Bad Raw Folder: forest_cover_28011999_120259.csv
+2022-04-19/01:56:00	Column Length Validation END
+2022-04-19/01:57:33	Column Length Validation START
+2022-04-19/01:57:33	Invalid Column Length for the file. Bad Raw Folder: forest_cover_28011999_120259.csv
+2022-04-19/01:57:34	Column Length Validation END
+2022-04-19/01:58:47	Column Length Validation START
+2022-04-19/01:58:47	Invalid Column Length for the file. Bad Raw Folder: forest_cover_28011999_120259.csv
+2022-04-19/01:58:47	Column Length Validation END

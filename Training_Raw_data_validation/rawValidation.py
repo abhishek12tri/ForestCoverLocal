@@ -1,5 +1,3 @@
-import sqlite3
-from datetime import datetime
 import os
 import shutil
 import re
@@ -141,26 +139,60 @@ class Raw_Data_validation:
             raise OSError
 
     def validationRawColumns(self, NumberOfColumns):
+        """Previously that files are added to the good raw, for which file name validated
+        Here we are validating the Number of column in files and will move them to the bad folder if columns does not varifies
+        """
         try:
             f = open("Training_Logs/columnValidationLog.txt", 'a+')
-            self.logger.log(f, "Column Length Validation Started!!")
-            for file in os.listdir('Training_Raw_files_validated/Good_Raw/'):
-                csv = pd.read_csv("Training_Raw_files_validated/Good_Raw/" + file)
+            self.logger.log(f, "Column Length Validation START")
+            for file in os.listdir(self.raw_validated + self.good_raw):
+                csv = pd.read_csv(self.raw_validated + self.good_raw + file)
                 if csv.shape[1] == NumberOfColumns:
                     pass
                 else:
-                    shutil.move("Training_Raw_files_validated/Good_Raw/" + file, "Training_Raw_files_validated/Bad_Raw")
-                    self.logger.log(f, "Invalid Column Length for the file!! File moved to Bad Raw Folder :: %s" % file)
-            self.logger.log(f, "Column Length Validation Completed!!")
+                    shutil.move(self.raw_validated + self.good_raw + file, self.raw_validated + self.bad_raw)
+                    self.logger.log(f, "Invalid Column Length for the file. Bad Raw Folder: %s" % file)
+            self.logger.log(f, "Column Length Validation END")
         except OSError:
             f = open("Training_Logs/columnValidationLog.txt", 'a+')
-            self.logger.log(f, "Error Occured while moving the file :: %s" % OSError)
+            self.logger.log(f, "Error Occurred while moving the file :: %s" % OSError)
             f.close()
             raise OSError
         except Exception as e:
             f = open("Training_Logs/columnValidationLog.txt", 'a+')
-            self.logger.log(f, "Error Occured:: %s" % e)
+            self.logger.log(f, "Error Occurred:: %s" % e)
             f.close()
             raise e
         f.close()
 
+    def checkIsNAinWholeColumn(self):
+        """Extra Validation: Validate if whole column has missing data """
+        try:
+            file = open('Training_Logs/missingValuesInColumn.txt', 'a+')
+            self.logger.log(file, 'Missing Value validation START.')
+            for file_name in os.listdir(self.raw_validated + self.good_raw):
+                df = pd.read_csv(self.raw_validated + self.good_raw + file_name)
+                count = 0
+                for column in df:
+                    if (len(df[column]) - df[column].count()) == len(df[column]):
+                        count = count + 1
+                        shutil.move(self.raw_validated + self.good_raw + file_name, self.raw_validated + self.bad_raw)
+                        self.logger.log(file,
+                                        'A Empty column found for file: %s, file moved to bad_raw folder' % file_name)
+                        break
+                if count == 0:
+                    df.to_csv(self.raw_validated + self.good_raw + file_name, index=None, header=True)
+            self.logger.log(file, 'Missing Value validation END.')
+            file.close()
+
+        except OSError as osr:
+            file = open('Training_Logs/missingValuesInColumn.txt', 'a+')
+            self.logger.log(file, 'Error Occurred while checking missing value: %s' % osr)
+            file.close()
+            raise osr
+
+        except Exception as e:
+            file = open('Training_Logs/missingValuesInColumn.txt', 'a+')
+            self.logger.log(file, 'Error Occurred while checking missing value: %s' % e)
+            file.close()
+            raise e

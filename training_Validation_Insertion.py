@@ -10,11 +10,12 @@ class train_validation:
         self.dataTransform = dataTransform()
         self.dBOperation = dBOperation()
         self.file_object = open("Training_Logs/Training_Main_Log.txt", 'a+')
-        self.log_writer = App_Logger()
+        self.logger = App_Logger()
 
     def train_validation(self):
         try:
-            self.log_writer.log(self.file_object, 'Start of Validation on files for training!!')
+            """ Data Validation START """
+            self.logger.log(self.file_object, 'Start of Validation on files for training!!')
             """extracting values from prediction schema"""
             LengthOfDateStampInFile, LengthOfTimeStampInFile, column_names, NumberOfColumns = self.raw_data.values_from_schema()
             """getting the regex defined to validate filename"""
@@ -22,6 +23,16 @@ class train_validation:
             """validating filenames and columns of prediction files"""
             self.raw_data.validationRawFileName(regex_creation, LengthOfDateStampInFile, LengthOfTimeStampInFile)
             self.raw_data.validationRawColumns(NumberOfColumns)
+            self.raw_data.checkIsNAinWholeColumn()
+            self.logger.log(self.file_object, 'Validation Completed')
+            """ Data Validation END """
+
+            """ Data Transformation START """
+            self.logger.log(self.file_object, 'Data Transformation START')
+            self.dataTransform.addQuotesToStringValueinColumn()
+            self.logger.log(self.file_object, 'Data Transformation END')
+            """ Data Transformation END """
+
 
 
             

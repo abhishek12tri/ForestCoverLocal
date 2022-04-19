@@ -1,0 +1,21 @@
+2022-04-19/00:42:34	Missing Value validation START.
+2022-04-19/00:42:34	Error Occurred while checking missing value: local variable 'os' referenced before assignment
+2022-04-19/00:45:18	Missing Value validation START.
+2022-04-19/00:45:18	Error Occurred while checking missing value: 'f'
+2022-04-19/00:46:50	Missing Value validation START.
+2022-04-19/00:46:50	Error Occurred while checking missing value: 'f'
+2022-04-19/00:47:36	Missing Value validation START.
+2022-04-19/00:47:36	Error Occurred while checking missing value: 'f'
+2022-04-19/00:48:01	Missing Value validation START.
+2022-04-19/00:48:01	Error Occurred while checking missing value: 'f'
+2022-04-19/00:55:02	Missing Values Validation Started!!
+2022-04-19/00:55:02	Error Occured:: name 'listdir' is not defined
+2022-04-19/00:55:35	Missing Values Validation Started!!
+2022-04-19/01:26:34	Missing Value validation START.
+2022-04-19/01:26:36	Missing Value validation END.
+2022-04-19/01:56:00	Missing Value validation START.
+2022-04-19/01:56:01	Missing Value validation END.
+2022-04-19/01:57:34	Missing Value validation START.
+2022-04-19/01:57:35	Missing Value validation END.
+2022-04-19/01:58:47	Missing Value validation START.
+2022-04-19/01:58:49	Missing Value validation END.
