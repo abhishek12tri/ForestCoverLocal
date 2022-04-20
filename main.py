@@ -26,16 +26,11 @@ def clf_training_part():
                 if request.form['csv-folder-path'] is not None:
                     path = request.form['csv-folder-path']
                     train_valobj = train_validation(path)
-                    abcd = train_valobj.train_validation()
-                    print(abcd)
+                    """ Training Validation START """
+                    train_valobj.train_validation()
+
             except ValueError:
                 return Response('Error %s' % ValueError)
-        '''schema_path = 'schema_training.json'
-        with open(schema_path, 'r') as f:
-            dic = json.load(f)
-        f.close()
-        print(dic)
-        return dic'''
         return jsonify(request.form)
 
 

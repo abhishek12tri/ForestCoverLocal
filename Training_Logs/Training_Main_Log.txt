@@ -17,3 +17,41 @@
 2022-04-19/01:58:47	Start of Validation on files for training!!
 2022-04-19/01:58:49	Validation Completed
 2022-04-19/01:58:49	Data Transformation START
+2022-04-19/23:28:59	Start of Validation on files for training!!
+2022-04-19/23:29:02	Validation Completed
+2022-04-19/23:29:02	Data Transformation START
+2022-04-19/23:29:04	Data Transformation END
+2022-04-19/23:29:04	Training database operations START
+2022-04-19/23:36:33	Start of Validation on files for training!!
+2022-04-19/23:36:35	Validation Completed
+2022-04-19/23:36:35	Data Transformation START
+2022-04-19/23:36:37	Data Transformation END
+2022-04-19/23:36:37	Training database operations START
+2022-04-19/23:36:41	Training table CREATED
+2022-04-19/23:38:59	Start of Validation on files for training!!
+2022-04-19/23:39:02	Validation Completed
+2022-04-19/23:39:02	Data Transformation START
+2022-04-19/23:39:03	Data Transformation END
+2022-04-19/23:39:03	Training database operations START
+2022-04-19/23:39:07	Training table CREATED
+2022-04-19/23:41:24	Start of Validation on files for training!!
+2022-04-19/23:41:26	Validation Completed
+2022-04-19/23:41:26	Data Transformation START
+2022-04-19/23:41:27	Data Transformation END
+2022-04-19/23:41:27	Training database operations START
+2022-04-19/23:41:31	Training table CREATED
+2022-04-19/23:47:05	Start of Validation on files for training!!
+2022-04-19/23:47:07	Validation Completed
+2022-04-19/23:47:07	Data Transformation START
+2022-04-19/23:47:09	Data Transformation END
+2022-04-19/23:47:09	Training database operations START
+2022-04-19/23:47:13	Training table CREATED
+2022-04-20/03:41:36	Table Data Insertion COMPLETED
+2022-04-20/03:41:36	Deletion Good Data Folder START
+2022-04-20/03:41:37	Deletion Good Data Folder END
+2022-04-20/21:59:13	Moved Bad files to archive
+2022-04-20/21:59:13	Validation Operation completed.
+2022-04-20/21:59:13	Validation Operation completed.
+2022-04-20/22:01:22	Moved Bad files to archive
+2022-04-20/22:01:22	Validation Operation completed.
+2022-04-20/22:01:22	Validation Operation completed.

@@ -11,6 +11,7 @@ class train_validation:
         self.dBOperation = dBOperation()
         self.file_object = open("Training_Logs/Training_Main_Log.txt", 'a+')
         self.logger = App_Logger()
+        self.trainingDB = 'Training'
 
     def train_validation(self):
         try:
@@ -33,10 +34,24 @@ class train_validation:
             self.logger.log(self.file_object, 'Data Transformation END')
             """ Data Transformation END """
 
+            """ Perform Database Operations for training START """
+            self.logger.log(self.file_object, 'Training database operations START')
+            self.dBOperation.createTableDB(self.trainingDB, column_names)
+            self.logger.log(self.file_object, 'Training table CREATED')
+            self.dBOperation.insertionIntoGoodDB(self.trainingDB)
+            print("insert complete")
+            self.logger.log(self.file_object, 'Table Data Insertion COMPLETED')
+            self.logger.log(self.file_object, 'Deletion Good Data Folder START')
+            self.raw_data.deleteExistingGoodDataFolder()
+            self.logger.log(self.file_object, 'Deletion Good Data Folder END')
+            self.raw_data.moveBadFilestoArchiveBad()
+            self.logger.log(self.file_object, 'Moved Bad files to archive')
+            self.logger.log(self.file_object, 'Validation Operation completed.')
+            self.dBOperation.selectdatafromtableintoCSV(self.trainingDB)
+            self.file_object.close()
+            """ Perform Database Operations for training END """
 
-
-            
-            return LengthOfDateStampInFile
         except Exception as e:
+            self.file_object.close()
             return e
 

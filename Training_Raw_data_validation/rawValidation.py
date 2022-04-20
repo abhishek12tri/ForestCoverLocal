@@ -3,6 +3,7 @@ import shutil
 import re
 import json
 import pandas as pd
+from datetime import datetime
 from application_logging.logger import App_Logger
 
 
@@ -196,3 +197,35 @@ class Raw_Data_validation:
             self.logger.log(file, 'Error Occurred while checking missing value: %s' % e)
             file.close()
             raise e
+
+    def moveBadFilestoArchiveBad(self):
+        """ Deletes the Bad folder directory and & store in Archive Bad """
+        time_now = datetime.now()
+        date_now = time_now.date()
+        time = time_now.strftime('%H%M%S')
+
+        try:
+            if os.path.isdir(self.raw_validated + self.bad_raw):
+                path = "TrainingArchiveBadData"
+                if not os.path.isdir(path):
+                    os.makedirs(path)
+                dest = 'TrainingArchiveBadData/BadData_' + str(date_now) + "_" + str(time)
+                if not os.path.isdir(dest):
+                    os.makedirs(dest)
+
+                files = os.listdir(self.raw_validated + self.bad_raw)
+                for f in files:
+                    if f not in os.listdir(dest):
+                        shutil.move(self.raw_validated + self.bad_raw + f, dest)
+                file = open('Training_Logs/GeneralLog.txt', 'a+')
+                self.logger.log(file, 'Bad Files moved to archive')
+                if os.path.isdir(self.raw_validated + self.bad_raw):
+                    shutil.rmtree(self.raw_validated + self.bad_raw)
+                self.logger.log(file, 'Deleted Bad Data Folder.')
+                file.close()
+
+        except Exception as er:
+            file = open('Training_Logs/GeneralLog.txt', 'a+')
+            self.logger.log(file, 'Error while moving Bad Files to archive : %s' % er)
+            file.close()
+            raise er
