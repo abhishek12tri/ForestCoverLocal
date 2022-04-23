@@ -55,3 +55,20 @@
 2022-04-20/22:01:22	Moved Bad files to archive
 2022-04-20/22:01:22	Validation Operation completed.
 2022-04-20/22:01:22	Validation Operation completed.
+2022-04-21/23:08:49	Start of Validation on files for training!!
+2022-04-21/23:08:51	Validation Completed
+2022-04-21/23:08:51	Data Transformation START
+2022-04-21/23:08:53	Data Transformation END
+2022-04-21/23:08:53	Training database operations START
+2022-04-21/23:08:58	Training table CREATED
+2022-04-22/02:49:54	Table Data Insertion COMPLETED
+2022-04-22/02:49:54	Deletion Good Data Folder START
+2022-04-22/02:49:54	Deletion Good Data Folder END
+2022-04-22/02:49:54	Moved Bad files to archive
+2022-04-22/02:49:54	Validation Operation completed.
+2022-04-22/17:18:33	Start of Validation on files for training!!
+2022-04-22/17:18:36	Validation Completed
+2022-04-22/17:18:36	Data Transformation START
+2022-04-22/17:18:37	Data Transformation END
+2022-04-22/17:18:37	Training database operations START
+2022-04-22/17:18:43	Training table CREATED

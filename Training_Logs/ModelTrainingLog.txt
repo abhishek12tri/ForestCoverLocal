@@ -1,0 +1,15 @@
+2022-04-20/23:30:32	Model Training START
+2022-04-20/23:30:32	Getting Data from file START
+2022-04-20/23:31:15	Data loaded successfully
+2022-04-21/08:17:39	Model Training START
+2022-04-21/08:17:39	Getting Data from file START
+2022-04-21/08:18:21	Data loaded successfully
+2022-04-21/08:21:07	Model Training START
+2022-04-21/08:21:07	Getting Data from file START
+2022-04-21/08:21:52	Data loaded successfully
+2022-04-21/08:37:01	Model Training START
+2022-04-21/08:37:01	Getting Data from file START
+2022-04-21/08:37:45	Data loaded successfully
+2022-04-22/02:49:57	Model Training START
+2022-04-22/02:49:57	Getting Data from file START
+2022-04-22/02:50:38	Data loaded successfully

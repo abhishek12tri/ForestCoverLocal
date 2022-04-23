@@ -64,3 +64,11 @@
 2022-04-20/03:41:37	Good file deleted from folder
 2022-04-20/21:59:13	Bad Files moved to archive
 2022-04-20/21:59:13	Deleted Bad Data Folder.
+2022-04-21/23:06:42	Good Bad Directory created successfully
+2022-04-21/23:08:49	Bad data raw deleted from folder
+2022-04-21/23:08:49	Good file deleted from folder
+2022-04-21/23:08:49	Good Bad Directory created successfully
+2022-04-22/02:49:54	Good file deleted from folder
+2022-04-22/02:49:54	Bad Files moved to archive
+2022-04-22/02:49:54	Deleted Bad Data Folder.
+2022-04-22/17:18:33	Good Bad Directory created successfully

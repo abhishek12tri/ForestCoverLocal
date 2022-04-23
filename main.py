@@ -4,7 +4,7 @@ import os
 from flask_cors import CORS, cross_origin
 import flask_monitoringdashboard as dashboard
 from training_Validation_Insertion import train_validation
-import pandas as pd
+from trainingModel import trainModel
 
 app = Flask(__name__)
 dashboard.bind(app)
@@ -28,6 +28,10 @@ def clf_training_part():
                     train_valobj = train_validation(path)
                     """ Training Validation START """
                     train_valobj.train_validation()
+
+                    """ Training Model """
+                    # trainModelObj = trainModel()
+                    # trainModelObj.trainingModel()
 
             except ValueError:
                 return Response('Error %s' % ValueError)

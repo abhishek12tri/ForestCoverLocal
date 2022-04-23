@@ -1,0 +1,4 @@
+2022-04-21/23:06:48	Tables created successfully!!
+2022-04-21/23:06:48	Closed Training database successfully
+2022-04-23/12:21:30	Tables created successfully!!
+2022-04-23/12:21:30	Closed Training database successfully

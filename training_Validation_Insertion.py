@@ -38,6 +38,7 @@ class train_validation:
             self.logger.log(self.file_object, 'Training database operations START')
             self.dBOperation.createTableDB(self.trainingDB, column_names)
             self.logger.log(self.file_object, 'Training table CREATED')
+
             self.dBOperation.insertionIntoGoodDB(self.trainingDB)
             print("insert complete")
             self.logger.log(self.file_object, 'Table Data Insertion COMPLETED')
@@ -54,4 +55,3 @@ class train_validation:
         except Exception as e:
             self.file_object.close()
             return e
-

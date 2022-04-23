@@ -35,21 +35,32 @@ class dBOperation:
         """ Create DB Tables """
         try:
             conn = self.dataBaseConnection(dbname)
-            conn.execute("DROP table IF EXISTS " + self.raw_table + ";")
+            c = conn.cursor()
+            c.execute("SELECT count(name) FROM sqlite_master WHERE type = 'table' AND name = 'Good_Raw_Data'")
+            if c.fetchone()[0] == 1:
+                conn.close()
+                file = open("Training_Logs/DbTableCreateLog.txt", 'a+')
+                self.logger.log(file, "Tables created successfully!!")
+                self.logger.log(file, "Closed %s database successfully" % dbname)
+                file.close()
 
-            for key in column_names.keys():
-                clmType = column_names[key]
-                try:
-                    conn.execute('ALTER TABLE {table_name} ADD COLUMN "{column_name}" {dataType}'.format(
-                        table_name=self.raw_table, column_name=key, dataType=clmType))
-                except:
-                    conn.execute('CREATE TABLE {table_name} ({column_name} {data_type})'.format(
-                        table_name=self.raw_table, column_name=key, data_type=clmType))
-            conn.close()
-            file = open('Training_Logs/DataBaseConnectionLog.txt', 'a+')
-            self.logger.log(file, 'Training DB Created.')
-            self.logger.log(file, 'Training DB Closed.')
-            file.close()
+            else:
+                for key in column_names.keys():
+                    type = column_names[key]
+
+                    try:
+                        conn.execute(
+                            'ALTER table Good_Raw_Data ADD COLUMN "{column_name}" {dataType}'.format(column_name=key,
+                                                                                                     dataType=type))
+                    except:
+                        conn.execute('CREATE TABLE Good_Raw_Data ({column_name} {dataType})'.format(column_name=key,
+                                                                                                    dataType=type))
+                conn.close()
+
+                file = open('Training_Logs/DataBaseConnectionLog.txt', 'a+')
+                self.logger.log(file, 'Training DB Created.')
+                self.logger.log(file, 'DB Closed.')
+                file.close()
 
         except Exception as e:
             file = open('Training_Logs/DataBaseConnectionLog.txt', 'a+')
@@ -71,7 +82,7 @@ class dBOperation:
                         for s_cl in (line[1]):
                             try:
                                 conn.execute('INSERT INTO {good_table} values ({values})'.format(
-                                    good_table=self.raw_table, values=(s_cl)))
+                                    good_table=self.raw_table, values=s_cl))
                                 self.logger.log(logfile, "%s: Loaded Successfully" % file)
                                 conn.commit()
                                 print("row: " + str(count))
@@ -108,7 +119,7 @@ class dBOperation:
             csvfile = csv.writer(open(self.fileFromDb + self.fileName, 'w', newline=''),
                                  delimiter=',', lineterminator='\r\n', quoting=csv.QUOTE_ALL, escapechar='\\')
             csvfile.writerow(headers)
-            csvfile.writerow(results)
+            csvfile.writerows(results)
 
             self.logger.log(logfile, 'File Successfully Exported.')
             logfile.close()
