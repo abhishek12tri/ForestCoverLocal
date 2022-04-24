@@ -15,8 +15,6 @@
       <change afterPath="$PROJECT_DIR$/../../../Machine Learning/Machine Learning Module 3-20220308T185346Z-001/Machine Learning Module 3/ensemble_boosting-1/ensemble_boosting/.idea/ensemble_boosting.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../Machine Learning/Machine Learning Module 5-20220401T162105Z-001/Machine Learning Module 5/sentiment_analysis/.idea/sentiment_analysis.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../Machine Learning/Machine Learning Module 5-20220401T162105Z-001/Machine Learning Module 5/sentiment_analysis/sentiment_analysis_deploy/.idea/TwitterSentimentAnalysis.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trainingModel.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../forestCover/code/forest_cover_Classification/.idea/forest_cover_Classification.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../python/Python-20220220T061741Z-001/Python/Flask_demo/flask_demo/.idea/untitled.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../python/apiFlask/.idea/apiproject.iml" afterDir="false" />
@@ -24,21 +22,11 @@
       <change afterPath="$PROJECT_DIR$/../../../python/apiFlask/learning/.idea/Flask.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../python/apiFlask/learning/flask_demo/.idea/flask_demo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTypeValidation_Insertion_Training/DataTypeValidation.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataTypeValidation_Insertion_Training/DataTypeValidation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training_Database/Training.db" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Database/Training.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training_FileFromDB/InputFile.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Training_FileFromDB/InputFile.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training_Logs/DataBaseConnectionLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/DataBaseConnectionLog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training_Logs/ExportToCsv.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/ExportToCsv.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training_Logs/GeneralLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/GeneralLog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training_Logs/Training_Main_Log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/Training_Main_Log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training_Logs/addQuotesToStringValuesInColumn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/addQuotesToStringValuesInColumn.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training_Logs/columnValidationLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/columnValidationLog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training_Logs/missingValuesInColumn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/missingValuesInColumn.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training_Logs/nameValidationLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/nameValidationLog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training_Logs/valuesfromSchemaValidationLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/valuesfromSchemaValidationLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataPreprocessing/preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataPreprocessing/preprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/ModelTrainingLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/ModelTrainingLog.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_monitoringdashboard.db" beforeDir="false" afterPath="$PROJECT_DIR$/flask_monitoringdashboard.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training_Validation_Insertion.py" beforeDir="false" afterPath="$PROJECT_DIR$/training_Validation_Insertion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainingModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainingModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../python/String and lists.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../python/String and lists.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

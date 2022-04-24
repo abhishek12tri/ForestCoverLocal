@@ -25,13 +25,13 @@ def clf_training_part():
             try:
                 if request.form['csv-folder-path'] is not None:
                     path = request.form['csv-folder-path']
-                    train_valobj = train_validation(path)
-                    """ Training Validation START """
-                    train_valobj.train_validation()
+                    # train_valobj = train_validation(path)
+                    # """ Training Validation START """
+                    # train_valobj.train_validation()
 
                     """ Training Model """
-                    # trainModelObj = trainModel()
-                    # trainModelObj.trainingModel()
+                    trainModelObj = trainModel()
+                    trainModelObj.trainingModel()
 
             except ValueError:
                 return Response('Error %s' % ValueError)

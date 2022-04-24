@@ -13,3 +13,49 @@
 2022-04-22/02:49:57	Model Training START
 2022-04-22/02:49:57	Getting Data from file START
 2022-04-22/02:50:38	Data loaded successfully
+2022-04-23/15:46:27	Model Training START
+2022-04-23/15:46:27	Getting Data from file START
+2022-04-23/15:46:27	Data loaded successfully
+2022-04-23/15:47:14	Model Training START
+2022-04-23/15:47:14	Getting Data from file START
+2022-04-23/15:47:14	Data loaded successfully
+2022-04-23/15:47:55	Model Training START
+2022-04-23/15:47:55	Getting Data from file START
+2022-04-23/15:47:56	Data loaded successfully
+2022-04-23/15:53:15	Model Training START
+2022-04-23/15:53:15	Getting Data from file START
+2022-04-23/15:53:16	Data loaded successfully
+2022-04-24/10:33:25	Model Training START
+2022-04-24/10:33:25	Getting Data from file START
+2022-04-24/10:33:26	Data loaded successfully
+2022-04-24/10:33:26	Train Test Split
+2022-04-24/10:35:08	Model Training START
+2022-04-24/10:35:08	Getting Data from file START
+2022-04-24/10:35:09	Data loaded successfully
+2022-04-24/10:35:09	Train Test Split
+2022-04-24/10:36:55	Model Training START
+2022-04-24/10:36:55	Getting Data from file START
+2022-04-24/10:36:56	Data loaded successfully
+2022-04-24/10:36:56	Train Test Split
+2022-04-24/10:39:53	Model Training START
+2022-04-24/10:39:53	Getting Data from file START
+2022-04-24/10:39:53	Data loaded successfully
+2022-04-24/10:39:53	Train Test Split
+2022-04-24/10:40:35	Model Training START
+2022-04-24/10:40:35	Getting Data from file START
+2022-04-24/10:40:36	Data loaded successfully
+2022-04-24/10:40:36	Train Test Split
+2022-04-24/10:41:43	Finding Optimum Clustering Number
+2022-04-24/10:44:22	Error in Elbow Method
+2022-04-24/10:55:15	Model Training START
+2022-04-24/10:55:15	Getting Data from file START
+2022-04-24/10:55:16	Data loaded successfully
+2022-04-24/10:55:16	Train Test Split
+2022-04-24/10:55:58	Finding Optimum Clustering Number
+2022-04-24/10:57:50	Error in Elbow Method
+2022-04-24/10:59:02	Model Training START
+2022-04-24/10:59:02	Getting Data from file START
+2022-04-24/10:59:02	Data loaded successfully
+2022-04-24/10:59:02	Train Test Split
+2022-04-24/10:59:46	Finding Optimum Clustering Number
+2022-04-24/11:01:30	Cluster Number = <kneed.knee_locator.KneeLocator object at 0x7f07341b60a0>
