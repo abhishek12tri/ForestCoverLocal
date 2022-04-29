@@ -67,10 +67,14 @@ class dBOperation:
             self.logger.log(file, 'Error while creating Training DB: %s.' % e)
             raise e
 
+    def insertionIntoGoodDBtest(self, trainingDB):
+        conn = self.dataBaseConnection(trainingDB)
+
     def insertionIntoGoodDB(self, trainingDB):
         """ Method Used to Good Data insertion operation to the DB """
         conn = self.dataBaseConnection(trainingDB)
         all_files = [f for f in os.listdir(self.goodFilePath)]
+        all_files = ['forest_cover_28011991_120211.csv']
         logfile = open('Training_Logs/DataBaseConnectionLog.txt', 'a+')
         count = 1
         for file in all_files:

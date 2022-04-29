@@ -34,12 +34,17 @@ def clf_training_part():
                     trainModelObj.trainingModel()
 
             except ValueError:
-                return Response('Error %s' % ValueError)
+                return Response('ValueError Occurred %s' % ValueError)
+            except KeyError:
+                return Response('KeyError Occurred %s' % KeyError)
+            except Exception as e:
+                return Response('Error Occurred %s' % e)
+            return Response('Training Successful')
         return jsonify(request.form)
 
 
 if __name__ == "__main__":
     host = '0.0.0.0'
-    port = int(os.getenv('PORT', 5000))
+    port = int(os.getenv('PORT', 5001))
     httpd = simple_server.make_server(host, port, app)
     httpd.serve_forever()

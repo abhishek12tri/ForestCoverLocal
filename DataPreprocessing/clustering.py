@@ -7,6 +7,7 @@ from fileOperations.fileMethods import FileMethods
 class KMeansClustering:
     """ The class will be used to handle all kinds of clustering methodologies
     for the dataset (KMeans) """
+
     def __init__(self, file_object, logger):
         self.numberCluster = None
         self.file_object = file_object
@@ -27,8 +28,8 @@ class KMeansClustering:
             plt.title('Elbow Plotting')
             plt.xlabel('No. of clusters')
             plt.ylabel('WCSS')
-            #plt.show()
-            plt.savefig('Preprocessing_Data/K-Means_Elbow.PNG')
+            # plt.show()
+            plt.savefig('Preprocessing_Data/K-Means_Elbow1.PNG')
 
             self.numberCluster = KneeLocator(range(2, 12), wcss, curve='convex', direction='decreasing')
             self.logger.log(self.file_object, "Cluster Number = %s" % self.numberCluster)
@@ -42,7 +43,7 @@ class KMeansClustering:
     def create_clusters(self, features, clusterNumber):
         self.logger.log(self.file_object, 'Entered KMeans Clustering')
         try:
-            kmean = KMeans(n_clusters = clusterNumber, init='k-means++', random_state=32)
+            kmean = KMeans(n_clusters=clusterNumber, init='k-means++', random_state=32)
             """ Dividing data into Clusters """
             y_means = kmean.fit_predict(features)
             fileoper_obj = FileMethods(self.file_object, self.logger)
@@ -50,11 +51,8 @@ class KMeansClustering:
             save_model = fileoper_obj.save_model(kmean, 'KMeans')
             """ Adding Cluster data in Features """
             features['cluster'] = y_means
-            self.logger.log(self.file_object, 'Successfully created Cluster: '+str(self.numberCluster))
+            self.logger.log(self.file_object, 'Successfully created Cluster: ' + str(self.numberCluster))
             return features
         except Exception as ex:
-            self.logger.log(self.file_object, 'Error in creating clusters '+str(ex))
+            self.logger.log(self.file_object, 'Error in creating clusters ' + str(ex))
             raise ex
-
-
-

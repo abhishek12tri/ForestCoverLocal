@@ -4,7 +4,7 @@ from DataPreprocessing.clustering import KMeansClustering
 from sklearn.model_selection import train_test_split
 from application_logging import logger
 from BestModelFinder.modelTuner import ModelFinder
-import pandas as pd
+from fileOperations.fileMethods import FileMethods
 
 
 class trainModel:
@@ -39,6 +39,8 @@ class trainModel:
             """ Now dataset has 2 additional columns- Cluster and label """
             X['label'] = Y
             cluster_list = X['cluster'].unique()
+            print('cluster_list')
+            print(cluster_list)
 
             """parsing all the clusters and looking for the best ML algorithm to fit on individual cluster"""
             for i in cluster_list:
@@ -50,6 +52,12 @@ class trainModel:
 
                 X_train, X_test, Y_train, Y_test = train_test_split(cls_features, cls_labels, test_size=(1 / 3),
                                                                     random_state=32)
+                print('Feature Shapes')
+                print(X_train)
+                print(X_test)
+                print(Y_train)
+                print(Y_test)
+
                 X_train = preprocessor.scaleData(X_train)
                 X_test = preprocessor.scaleData(X_test)
 
@@ -57,17 +65,13 @@ class trainModel:
                 model_finder = ModelFinder(self.file_object, self.logger)
                 best_model_name, best_model = model_finder.try_best_model(X_train, X_test, Y_train, Y_test)
 
+                fileOperations = FileMethods(self.file_object, self.logger)
+                fileOperations.save_model(best_model, best_model_name+str(i))
 
-
-
-
-            print(clusterNumber)
-            # print(data_inp.head())
-            # print(data_inp.columns)
-            # print(pd.DataFrame(data_inp.elevation).head() )
+            self.logger.log(self.file_object, 'Training Successfully END')
             self.file_object.close()
 
         except Exception as er:
-            self.logger.log(self.file_object, 'Error in Training: ' % er)
+            self.logger.log(self.file_object, 'Error in Training: %s' % er)
             self.file_object.close()
             raise er

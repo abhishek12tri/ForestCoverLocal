@@ -9,12 +9,6 @@
       <change afterPath="$PROJECT_DIR$/../../../Machine Learning/Machine Learning Module 1/MachineLearningModelToAWS-master/MLForCloudDeployment_AWS/MLforAWS/.idea/MLForCloudDeployment.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../Machine Learning/Machine Learning Module 1/MachineLearningModelToAWS-master/MLForCloudDeployment_AWS/NewFolder/.idea/NewFolder.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../Machine Learning/Machine Learning Module 1/deployment-local/.idea/deployment-local.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Machine Learning/Machine Learning Module 2-20220220T150553Z-001/Machine Learning Module 2/code form iNeuron-20210302T225008Z-001/code form iNeuron/KNN/kNN_deployment/.idea/kNN_deployment.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Machine Learning/Machine Learning Module 2-20220220T150553Z-001/Machine Learning Module 2/code form iNeuron-20210302T225008Z-001/code form iNeuron/sentiment_analysis/sentiment_analysis_deploy/.idea/TwitterSentimentAnalysis.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Machine Learning/Machine Learning Module 3-20220308T185346Z-001/Machine Learning Module 3/KNN/kNN_deployment/.idea/kNN_deployment.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Machine Learning/Machine Learning Module 3-20220308T185346Z-001/Machine Learning Module 3/ensemble_boosting-1/ensemble_boosting/.idea/ensemble_boosting.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Machine Learning/Machine Learning Module 5-20220401T162105Z-001/Machine Learning Module 5/sentiment_analysis/.idea/sentiment_analysis.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Machine Learning/Machine Learning Module 5-20220401T162105Z-001/Machine Learning Module 5/sentiment_analysis/sentiment_analysis_deploy/.idea/TwitterSentimentAnalysis.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../forestCover/code/forest_cover_Classification/.idea/forest_cover_Classification.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../python/Python-20220220T061741Z-001/Python/Flask_demo/flask_demo/.idea/untitled.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../python/apiFlask/.idea/apiproject.iml" afterDir="false" />
@@ -22,11 +16,21 @@
       <change afterPath="$PROJECT_DIR$/../../../python/apiFlask/learning/.idea/Flask.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../python/apiFlask/learning/flask_demo/.idea/flask_demo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BestModelFinder/modelTuner.py" beforeDir="false" afterPath="$PROJECT_DIR$/BestModelFinder/modelTuner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataPreprocessing/clustering.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataPreprocessing/clustering.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataPreprocessing/preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataPreprocessing/preprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataTypeValidation_Insertion_Training/DataTypeValidation.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataTypeValidation_Insertion_Training/DataTypeValidation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preprocessing_Data/K-Means_Elbow.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Preprocessing_Data/K-Means_Elbow.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_FileFromDB/.~lock.InputFile.csv#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/DataBaseConnectionLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/DataBaseConnectionLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/ExportToCsv.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/ExportToCsv.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Training_Logs/ModelTrainingLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/ModelTrainingLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/Training_Main_Log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/Training_Main_Log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_Logs/valuesfromSchemaValidationLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/valuesfromSchemaValidationLog.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_monitoringdashboard.db" beforeDir="false" afterPath="$PROJECT_DIR$/flask_monitoringdashboard.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trainingModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainingModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_Validation_Insertion.py" beforeDir="false" afterPath="$PROJECT_DIR$/training_Validation_Insertion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../python/String and lists.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../python/String and lists.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,13 +58,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/abhishek/learn/iNeuron/projects/Forest Cover/ForestCoverLocal",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/abhishek/learn/iNeuron/projects/Forest Cover/ForestCoverLocal&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />

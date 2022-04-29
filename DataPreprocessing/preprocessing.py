@@ -37,7 +37,7 @@ class Preprocessor:
                        'Vertical_Distance_To_Hydrology', 'Horizontal_Distance_To_Roadways',
                        'Horizontal_Distance_To_Fire_Points']
         num_data = feature_data[num_columns]
-        cat_data = feature_data.drop(num_columns, axis = 1)
+        cat_data = feature_data.drop(num_columns, axis=1)
         scaled_data = scaler.fit_transform(num_data)
 
         num_data = pd.DataFrame(scaled_data, columns=num_data.columns, index=num_data.index)
