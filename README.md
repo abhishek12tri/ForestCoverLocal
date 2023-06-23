@@ -1,3 +1,3 @@
 # ForestCoverLocal
-The project is desined by iNeuron.
+The project is designed by iNeuron.
 
