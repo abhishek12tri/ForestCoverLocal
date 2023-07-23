@@ -1,0 +1,38 @@
+2023-07-23 12:03:30		--------------------
+2023-07-23 12:03:30		Model Training
+2023-07-23 12:03:30		Data loaded successfully.
+2023-07-23 12:05:31		Clusters: 3
+2023-07-23 12:05:36		Model file saved at models/KMeans
+2023-07-23 12:05:36		Created data clusters: 3
+2023-07-23 12:05:36		Start: ML algo for each cluster.
+2023-07-23 12:05:37		Features Scaling Completed
+2023-07-23 12:05:37		Features Scaling Completed
+2023-07-23 12:05:37		Start find best model.
+2023-07-23 12:05:37		Finding best params for XGBoost.
+2023-07-23 14:34:40		XGBoost Classifier parameters: lr=0.5 max_depth=20 n_est=200
+2023-07-23 14:34:41		AUC for XGBoost: 0.9999254780969731
+2023-07-23 14:34:41		Finding best params for random forest.
+2023-07-23 14:36:46		Rndm Forest Classifier parameters:  max_depth=5 n_est=100 criterion=entropy max_feature=log2
+2023-07-23 14:36:47		AUC for RF: 0.890999002391719
+2023-07-23 14:36:47		Model file saved at models/XGBoost0
+2023-07-23 14:36:48		Features Scaling Completed
+2023-07-23 14:36:48		Features Scaling Completed
+2023-07-23 14:36:48		Start find best model.
+2023-07-23 14:36:48		Finding best params for XGBoost.
+2023-07-23 16:28:35		XGBoost Classifier parameters: lr=0.5 max_depth=10 n_est=50
+2023-07-23 16:28:36		AUC for XGBoost: 0.9999800054945851
+2023-07-23 16:28:36		Finding best params for random forest.
+2023-07-23 16:30:42		Rndm Forest Classifier parameters:  max_depth=5 n_est=125 criterion=gini max_feature=auto
+2023-07-23 16:30:43		AUC for RF: 0.9172954068544167
+2023-07-23 16:30:43		Model file saved at models/XGBoost2
+2023-07-23 16:30:43		Features Scaling Completed
+2023-07-23 16:30:43		Features Scaling Completed
+2023-07-23 16:30:43		Start find best model.
+2023-07-23 16:30:43		Finding best params for XGBoost.
+2023-07-23 16:57:24		XGBoost Classifier parameters: lr=0.5 max_depth=5 n_est=100
+2023-07-23 16:57:24		AUC for XGBoost: 0.9998327561384255
+2023-07-23 16:57:24		Finding best params for random forest.
+2023-07-23 16:57:55		Rndm Forest Classifier parameters:  max_depth=5 n_est=100 criterion=entropy max_feature=auto
+2023-07-23 16:57:55		AUC for RF: 0.9521405629489884
+2023-07-23 16:57:55		Model file saved at models/XGBoost1
+2023-07-23 16:57:55		Training Completed
