@@ -107,3 +107,23 @@
 2023-06-26 23:44:50		Data Inserted in DB.
 2023-06-26 23:45:26		Data Inserted in DB.
 2023-06-26 23:45:26		Insert DB Complete.
+2023-07-01 09:51:17		--------------------
+2023-07-01 09:51:17		Bad Files moved to archive
+2023-07-01 09:51:17		Deleted Bad Data Folder.
+2023-07-01 09:51:17		Deleted good folder and bad to archieve.
+2023-07-01 09:51:17		File Export Failed: DBOperation.dbConnection() missing 1 required positional argument: 'file_obj'
+2023-07-01 09:51:17		DBOperation.dbConnection() missing 1 required positional argument: 'file_obj'
+2023-07-01 09:52:12		--------------------
+2023-07-01 09:52:12		Deleted good folder and bad to archieve.
+2023-07-01 09:52:14		File Export Failed: 'DBOperation' object has no attribute 'fileFromDb'
+2023-07-01 09:52:14		'DBOperation' object has no attribute 'fileFromDb'
+2023-07-01 10:05:58		--------------------
+2023-07-01 10:05:58		Deleted good folder and bad to archieve.
+2023-07-01 10:05:58		'fileFromDb'
+2023-07-01 10:06:53		--------------------
+2023-07-01 10:06:53		Deleted good folder and bad to archieve.
+2023-07-01 10:06:53		'fileFromDb'
+2023-07-01 10:07:26		--------------------
+2023-07-01 10:07:26		Deleted good folder and bad to archieve.
+2023-07-01 10:07:28		File Successfully Exported.
+2023-07-01 10:07:28		Extracting CSV file from table.

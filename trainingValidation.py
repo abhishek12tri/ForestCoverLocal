@@ -40,8 +40,14 @@ class trainValidation:
             self.dbOperation.insert_into_table("Training", self.file_obj)
             
             self.logger.log(self.file_obj, "Insert DB Complete.")
-            
 
+            self.validation.deleteExistingGoodDataFolder(self.file_obj)
+            self.validation.moveBadFilestoArchiveBad(self.file_obj)
+            self.logger.log(self.file_obj, "Deleted good folder and bad to archieve.")
+
+            self.dbOperation.selectingDataToCSV("Training",self.file_obj)
+            self.logger.log(self.file_obj, "Extracting CSV file from table.")
+            self.file_obj.close()
 
         except Exception as e:
             self.logger.log(self.file_obj, str(e))

@@ -89,18 +89,19 @@ class DBOperation:
 
     def selectingDataToCSV(self, DBName, file_obj):
         """Descrion: Exports DB data in CSV."""
+        fileFromDb = self.logs_list["file_from_DB"]
         try:
-            conn = self.dbConnection(DBName)
+            conn = self.dbConnection(DBName, file_obj)
             sql_qr = "Select * from " + self.raw_table + ";"
             cursor = conn.cursor()
             cursor.execute(sql_qr)
             results = cursor.fetchall()
 
             headers = [i[0] for i in cursor.description]
-            if not os.path.isdir(self.fileFromDb):
-                os.makedirs(self.fileFromDb)
+            if not os.path.isdir(fileFromDb):
+                os.makedirs(fileFromDb)
 
-            csvfile = csv.writer(open(self.fileFromDb + self.fileName, 'w', newline=''),
+            csvfile = csv.writer(open( os.path.join(fileFromDb, self.logs_list["inputfile"]), 'w', newline=''),
                                  delimiter=',', lineterminator='\r\n', quoting=csv.QUOTE_ALL, escapechar='\\')
             csvfile.writerow(headers)
             csvfile.writerows(results)
