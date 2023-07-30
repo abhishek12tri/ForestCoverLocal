@@ -36,3 +36,6 @@
 2023-07-23 16:57:55		AUC for RF: 0.9521405629489884
 2023-07-23 16:57:55		Model file saved at models/XGBoost1
 2023-07-23 16:57:55		Training Completed
+2023-07-30 12:07:30		--------------------
+2023-07-30 12:07:30		Model Training
+2023-07-30 12:07:30		Data loaded successfully.

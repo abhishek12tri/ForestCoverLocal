@@ -64,7 +64,7 @@ class trainModel:
                 finder_resp = model_finder.get_best_model(X_train, y_train, X_test, y_test, self.file_obj)
 
                 file_op = FileOperation()
-                file_op.save_model(finder_resp["model"], os.path.join(self.log_list["model_dir"],  finder_resp["name"]+str(i)), self.file_obj)
+                file_op.save_model(finder_resp["model"], os.path.join(self.log_list["model_dir"],  finder_resp["name"]+"_"+str(i)), self.file_obj)
             self.logger.log(self.file_obj, "Training Completed")
             self.file_obj.close()
 

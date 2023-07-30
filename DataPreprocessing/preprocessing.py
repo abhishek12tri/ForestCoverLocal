@@ -6,11 +6,14 @@ from App_logging.logger import App_Logger
 from imblearn.over_sampling import SMOTE
 from sklearn.preprocessing import StandardScaler
 import pandas as pd
+from Operational.model_opeartion import FileOperation
+from log_files import logs_list
 
 
 class Preprocess:
     def __init__(self) -> None:
         self.logger = App_Logger()
+        self.log_list = logs_list()
 
     def encode_categorical(self, data, file_obj):
         """Description: Labels categorical encoding."""
@@ -18,6 +21,9 @@ class Preprocess:
             arr_data = data["class"].unique()
 
             data_dict = {single_ele: index  for index, single_ele in enumerate(arr_data)}
+            file_opr = FileOperation()
+            file_opr.save_label_data(data_dict)
+            
             data["class"] = data["class"].map(data_dict)
 
             return data

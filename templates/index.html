@@ -23,10 +23,6 @@
                         <div class="predict_btn">
                             <input type="button" name="submit" value="Predict">
                         </div>
-                        <div class="or_option"> or </div>
-                        <div class="default_predict">
-                            <input type="button" name="default_submit" value="Default Predict">
-                        </div>
                         
                     </div>
                 </form>
@@ -51,6 +47,7 @@
                     
                     jQuery('input[name="submit"]').click(function(e){
                         e.preventDefault();
+                        jQuery(".result_section").html("");
 
                         var data_path = jQuery("#inputfile").val();
 
@@ -62,6 +59,7 @@
                             },
                             success: function(response){
                                 console.log(response);
+                                jQuery(".result_section").html(response);
                             }
                         });
 

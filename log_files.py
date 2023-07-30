@@ -17,6 +17,13 @@ def logs_list():
     elbow_file = os.path.join("Training_Logs", "K-Means_Elbow.png")
     model_dir = "models/"
     kmeans_model = os.path.join(model_dir, 'KMeans')
+    label_json = os.path.join(model_dir, 'labels.json')
+
+    pred_log = os.path.join("PredictionLogs", "PredValidation.txt")
+    prediction = os.path.join("PredictionLogs", "Prediction.txt")
+    pred_error_files = "PredValFiles/"
+    input_file = "PredictInput.csv"
+    pred_file = "Predictions.csv"
 
     return {
         "train_log": train_log,
@@ -30,6 +37,12 @@ def logs_list():
         "elbow_file": elbow_file,
         "model_dir": model_dir,
         "kmeans_model": kmeans_model,
+        "label_json": label_json,
         "xgboost": "Xgboost",
-        "rmmodel": "RandomForest"
+        "rmmodel": "RandomForest",
+        "pred_log": pred_log,
+        "pred_error_files": pred_error_files,
+        "input_file": input_file,
+        "prediction": prediction,
+        "pred_file": pred_file
     }
