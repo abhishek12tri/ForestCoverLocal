@@ -182,4 +182,3 @@ ForestCoverLocal/         (Root dir)
   
   └─XGBoost_1.sav
 
-## Training
