@@ -1,5 +1,0 @@
-Windows: Scripts\Activate.ps1    -> Scripts\Activate.bat
-d:      dir
-flask --app main.py --debug run
-
-python training.py
